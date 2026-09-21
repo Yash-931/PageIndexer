@@ -1,0 +1,20 @@
+[project]
+name = "pageindexer"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Yash-931", email = "yaggarwal931@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "google-genai>=2.24.0",
+    "pageindex>=0.2.18",
+]
+
+[project.scripts]
+pageindexer = "pageindexer:main"
+
+[build-system]
+requires = ["uv_build>=0.12.9,<0.13.0"]
+build-backend = "uv_build"
